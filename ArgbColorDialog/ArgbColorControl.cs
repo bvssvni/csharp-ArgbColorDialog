@@ -83,6 +83,8 @@ namespace CutoutPro.Winforms
 		private Bitmap m_hsvBuffer = null;
 		private bool m_sendColorCodeChanged = true;
 		
+		private Form m_oldParent = null;
+		
 		public event EventHandler SelectedColorChanged;
 		
 		public bool SendColorCodeChanged
@@ -313,6 +315,27 @@ namespace CutoutPro.Winforms
 			ColorCodeHelper helper = new ColorCodeHelper();
 			helper.Step1_SetArgbColorControl(this);
 			helper.Step2_ColorCodeChanged();
+		}
+		
+		void ParentFormClosing(object sender, EventArgs e)
+		{
+			// Release the image buffers.
+			m_hsvBuffer.Dispose();
+			m_hsvBuffer = null;
+			m_alphaBuffer.Dispose();
+			m_alphaBuffer = null;
+			m_brightnessBuffer.Dispose();
+			m_brightnessBuffer = null;
+		}
+		
+		void ArgbColorControlParentChanged(object sender, EventArgs e)
+		{
+			// Remove event from old parent.
+			if (m_oldParent != null) m_oldParent.FormClosing -= ParentFormClosing;
+			
+			// Link up event in new parent so we get message when it closes.
+			m_oldParent = FindForm();
+			m_oldParent.FormClosing += ParentFormClosing;
 		}
 	}
 }

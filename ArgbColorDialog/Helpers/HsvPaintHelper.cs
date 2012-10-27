@@ -28,6 +28,7 @@ namespace CutoutPro.Winforms.Helpers
 			}
 			
 			changed = true;
+			if (buffer != null) buffer.Dispose();
 			m_control.HsvBuffer = new Bitmap(hsvBox.Width, hsvBox.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
 		}
 		

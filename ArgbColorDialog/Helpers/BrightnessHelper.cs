@@ -80,6 +80,7 @@ namespace CutoutPro.Winforms.Helpers
 			Bitmap buffer = m_control.BrightnessBuffer;
 			if (buffer != null && buffer.Width == brightness.Width && buffer.Height == brightness.Height) return;
 			
+			if (buffer != null) buffer.Dispose();
 			m_control.BrightnessBuffer = new Bitmap(brightness.Width, brightness.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
 		}
 		

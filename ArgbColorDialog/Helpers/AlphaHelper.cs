@@ -24,6 +24,7 @@ namespace CutoutPro.Winforms.Helpers
 			Bitmap buffer = m_control.AlphaBuffer;
 			if (buffer != null && buffer.Width == alpha.Width && buffer.Height == alpha.Height) return;
 			
+			if (buffer != null) buffer.Dispose();
 			m_control.AlphaBuffer = new Bitmap(alpha.Width, alpha.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
 		}
 		

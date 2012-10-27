@@ -703,6 +703,7 @@ namespace CutoutPro.Winforms
 			this.Size = new System.Drawing.Size(357, 211);
 			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ArgbColorDialogKeyPress);
 			this.Resize += new System.EventHandler(this.ArgbColorDialogResize);
+			this.ParentChanged += new System.EventHandler(this.ArgbColorControlParentChanged);
 			((System.ComponentModel.ISupportInitialize)(this.hsvBox)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.alpha)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.brightness)).EndInit();
