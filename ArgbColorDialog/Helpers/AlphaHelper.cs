@@ -84,7 +84,11 @@ namespace CutoutPro.Winforms.Helpers
 				settings.AlphaValue = (float)a/255f;
 				alphaTextBox.BackColor = SystemColors.Window;
 				tip.SetToolTip(alphaTextBox, null);
-				alpha.Refresh();
+				
+				RefreshColorHelper helper = new RefreshColorHelper();
+				helper.Step1_SetArgbColorControl(m_control);
+				helper.Step2_ChangeColorCode(true);
+				helper.Step3_Refresh();
 			}
 			catch (Exception ex)
 			{

@@ -28,6 +28,8 @@ namespace TestArgbColorDialog
 			Test_ColorConvertion_3();
 			Test_ColorConvertion_4();
 			Test_ColorConvertion_5();
+			Test_ColorConvertion_6();
+			Test_ColorConvertion_7();
 		}
 		
 		private void Test_ColorConvertion_1()
@@ -88,6 +90,31 @@ namespace TestArgbColorDialog
 			
 			hex = Utils.HexStringFromColor(Color.FromArgb(253, 0, 0));
 			Debug.Assert(hex == "FD0000");
+		}
+		
+		private void Test_ColorConvertion_6()
+		{
+			string hex = Utils.HexStringFromArgbColor(Color.FromArgb(255, 255, 0, 0));
+			Debug.Assert(hex == "FF0000FF");
+		}
+		
+		private void Test_ColorConvertion_7()
+		{
+			Color c = Color.Black;
+			bool success = Utils.ArgbColorFromHexString("FFFEFDFC", ref c);
+			Debug.Assert(success == true);
+			Debug.Assert(c.R == 255);
+			Debug.Assert(c.G == 254);
+			Debug.Assert(c.B == 253);
+			Debug.Assert(c.A == 252);
+			
+			// Check that when alpha is not added, that it evaluates to full intensity.
+			success = Utils.ArgbColorFromHexString("FFFEFD", ref c);
+			Debug.Assert(success == true);
+			Debug.Assert(c.R == 255);
+			Debug.Assert(c.G == 254);
+			Debug.Assert(c.B == 253);
+			Debug.Assert(c.A == 255);
 		}
 		
 		void ColorDialogButtonClick(object sender, EventArgs e)

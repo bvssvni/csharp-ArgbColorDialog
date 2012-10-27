@@ -22,8 +22,9 @@ namespace CutoutPro.Winforms.Helpers
 			TextBox code = m_control.code;
 			Color color = Color.Black;
 			ToolTip tip = m_control.tip;
+			string text = code.Text;
 			
-			bool success = Utils.ColorFromHexString(code.Text, ref color);
+			bool success = Utils.ColorFromHexString(text, ref color);
 			if (!success)
 			{
 				code.BackColor = Color.Red;
@@ -38,6 +39,32 @@ namespace CutoutPro.Winforms.Helpers
 			RefreshColorHelper helper = new RefreshColorHelper();
 			helper.Step1_SetArgbColorControl(m_control);
 			helper.Step2_ChangeColorCode(false);
+			helper.Step3_Refresh();
+		}
+		
+		public void debug_Step2_ColorCodeChanged()
+		{
+			TextBox code = m_control.code;
+			Color color = Color.Black;
+			ToolTip tip = m_control.tip;
+			string text = code.Text;
+			
+			bool success = Utils.ArgbColorFromHexString(text, ref color);
+			if (!success)
+			{
+				code.BackColor = Color.Red;
+				tip.SetToolTip(code, "Use color format RGBA hexadecimal FFFFFFFF");
+				return;
+			}
+			
+			// Reset control to normal colors.
+			code.BackColor = SystemColors.Window;
+			tip.SetToolTip(code, null);
+			
+			m_control.Settings.SetColor(color);
+			RefreshColorHelper helper = new RefreshColorHelper();
+			helper.Step1_SetArgbColorControl(m_control);
+			helper.Step2_ChangeAlpha(true);
 			helper.Step3_Refresh();
 		}
 	}

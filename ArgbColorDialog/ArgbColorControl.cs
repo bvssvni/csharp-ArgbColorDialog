@@ -82,11 +82,15 @@ namespace CutoutPro.Winforms
 		private Bitmap m_brightnessBuffer = null;
 		private Bitmap m_hsvBuffer = null;
 		private bool m_sendColorCodeChanged = true;
+		private bool m_sendAlphaChanged = true;
 		
 		private Form m_oldParent = null;
 		
 		public event EventHandler SelectedColorChanged;
 		
+		/// <summary>
+		/// When set to true, the color code text box sends events.
+		/// </summary>
 		public bool SendColorCodeChanged
 		{
 			get
@@ -96,6 +100,21 @@ namespace CutoutPro.Winforms
 			set
 			{
 				m_sendColorCodeChanged = value;
+			}
+		}
+		
+		/// <summary>
+		/// When set to true, the alpha text box sends events.
+		/// </summary>
+		public bool SendAlphaChanged
+		{
+			get
+			{
+				return m_sendAlphaChanged;
+			}
+			set
+			{
+				m_sendAlphaChanged = value;
 			}
 		}
 		
@@ -220,6 +239,8 @@ namespace CutoutPro.Winforms
 		
 		void AlphaTextBoxTextChanged(object sender, EventArgs e)
 		{
+			if (!m_sendAlphaChanged) return;
+			
 			AlphaHelper helper = new AlphaHelper();
 			helper.Step1_SetArgbColorControl(this);
 			helper.Step2_AlphaTextChanged();
@@ -314,7 +335,7 @@ namespace CutoutPro.Winforms
 			
 			ColorCodeHelper helper = new ColorCodeHelper();
 			helper.Step1_SetArgbColorControl(this);
-			helper.Step2_ColorCodeChanged();
+			helper.debug_Step2_ColorCodeChanged();
 		}
 		
 		void ParentFormClosing(object sender, EventArgs e)
