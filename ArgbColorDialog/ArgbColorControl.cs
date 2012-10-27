@@ -356,7 +356,8 @@ namespace CutoutPro.Winforms
 			
 			// Link up event in new parent so we get message when it closes.
 			m_oldParent = FindForm();
-			m_oldParent.FormClosing += ParentFormClosing;
+			
+			if (m_oldParent != null) m_oldParent.FormClosing += ParentFormClosing;
 		}
 	}
 }

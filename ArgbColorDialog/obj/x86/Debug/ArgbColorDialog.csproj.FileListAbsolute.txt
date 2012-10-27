@@ -1,9 +1,9 @@
-C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\bin\Debug\ArgbColorDialog.dll
 C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\bin\Debug\ArgbColorDialog.pdb
-C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\obj\x86\Debug\ArgbColorDialog.dll
-C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\obj\x86\Debug\ArgbColorDialog.pdb
+C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\obj\x86\Debug\CutoutPro.Winforms.ArgbColorControl.resources
 C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\obj\x86\Debug\CutoutPro.Winforms.ArgbColorDialog.resources
+C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\obj\x86\Debug\ArgbColorDialog.dll
+C:\Programmering\Stickman 5\Stickman\ArgbColorDialog\obj\x86\Debug\ArgbColorDialog.pdb

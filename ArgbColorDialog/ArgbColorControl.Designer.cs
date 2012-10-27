@@ -576,7 +576,7 @@ namespace CutoutPro.Winforms
 			this.hsvBox.BackColor = System.Drawing.Color.Black;
 			this.hsvBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.hsvBox.Cursor = System.Windows.Forms.Cursors.Cross;
-			this.hsvBox.Location = new System.Drawing.Point(165, 9);
+			this.hsvBox.Location = new System.Drawing.Point(161, 9);
 			this.hsvBox.Name = "hsvBox";
 			this.hsvBox.Size = new System.Drawing.Size(189, 184);
 			this.hsvBox.TabIndex = 79;
@@ -700,7 +700,7 @@ namespace CutoutPro.Winforms
 			this.Controls.Add(this.c1x1);
 			this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Name = "ArgbColorControl";
-			this.Size = new System.Drawing.Size(357, 211);
+			this.Size = new System.Drawing.Size(357, 199);
 			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ArgbColorDialogKeyPress);
 			this.Resize += new System.EventHandler(this.ArgbColorDialogResize);
 			this.ParentChanged += new System.EventHandler(this.ArgbColorControlParentChanged);

@@ -3,8 +3,8 @@ C:\Programmering\Stickman 5\Stickman\TestArgbColorDialog\bin\Debug\TestArgbColor
 C:\Programmering\Stickman 5\Stickman\TestArgbColorDialog\bin\Debug\ArgbColorDialog.dll
 C:\Programmering\Stickman 5\Stickman\TestArgbColorDialog\bin\Debug\ArgbColorDialog.pdb
 C:\Programmering\Stickman 5\Stickman\TestArgbColorDialog\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Programmering\Stickman 5\Stickman\TestArgbColorDialog\obj\x86\Debug\TestArgbColorDialog.exe
-C:\Programmering\Stickman 5\Stickman\TestArgbColorDialog\obj\x86\Debug\TestArgbColorDialog.pdb
 C:\Programmering\Stickman 5\Stickman\TestArgbColorDialog\obj\x86\Debug\TestArgbColorDialog.MainForm.resources
 C:\Programmering\Stickman 5\Stickman\TestArgbColorDialog\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Programmering\Stickman 5\Stickman\TestArgbColorDialog\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Programmering\Stickman 5\Stickman\TestArgbColorDialog\obj\x86\Debug\TestArgbColorDialog.exe
+C:\Programmering\Stickman 5\Stickman\TestArgbColorDialog\obj\x86\Debug\TestArgbColorDialog.pdb
