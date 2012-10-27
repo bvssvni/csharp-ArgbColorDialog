@@ -54,7 +54,7 @@ namespace CutoutPro.Winforms
 			colorDialogSettings1.Hue = 0F;
 			colorDialogSettings1.Saturation = 0F;
 			this.argbColorControl1.Settings = colorDialogSettings1;
-			this.argbColorControl1.Size = new System.Drawing.Size(362, 199);
+			this.argbColorControl1.Size = new System.Drawing.Size(362, 193);
 			this.argbColorControl1.TabIndex = 0;
 			this.argbColorControl1.SelectedColorChanged += new System.EventHandler(this.ArgbColorControl1SelectedColorChanged);
 			// 
@@ -64,7 +64,7 @@ namespace CutoutPro.Winforms
 									| System.Windows.Forms.AnchorStyles.Right)));
 			this.previewColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.previewColor.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.previewColor.Location = new System.Drawing.Point(6, 202);
+			this.previewColor.Location = new System.Drawing.Point(6, 196);
 			this.previewColor.Name = "previewColor";
 			this.previewColor.Size = new System.Drawing.Size(350, 33);
 			this.previewColor.TabIndex = 1;
@@ -77,7 +77,7 @@ namespace CutoutPro.Winforms
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.WhiteSmoke;
-			this.ClientSize = new System.Drawing.Size(361, 243);
+			this.ClientSize = new System.Drawing.Size(361, 237);
 			this.Controls.Add(this.previewColor);
 			this.Controls.Add(this.argbColorControl1);
 			this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

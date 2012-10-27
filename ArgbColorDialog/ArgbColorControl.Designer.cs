@@ -632,9 +632,9 @@ namespace CutoutPro.Winforms
 			// 
 			// code
 			// 
-			this.code.Location = new System.Drawing.Point(3, 172);
+			this.code.Location = new System.Drawing.Point(7, 172);
 			this.code.Name = "code";
-			this.code.Size = new System.Drawing.Size(152, 21);
+			this.code.Size = new System.Drawing.Size(148, 21);
 			this.code.TabIndex = 95;
 			this.code.Text = "000000";
 			this.code.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -642,6 +642,7 @@ namespace CutoutPro.Winforms
 			// 
 			// ArgbColorControl
 			// 
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.Controls.Add(this.code);
 			this.Controls.Add(this.brightness);
